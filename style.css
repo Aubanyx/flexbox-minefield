@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 100vh;
+}
+
+.flex-wrap {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    justify-content: center;
+    align-content: center;
+
+    width: 41em;
+    height: 41em;
+    list-style-type: none;
+    border: 1em groove gray;
+}
+
+.flex-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px dashed black;
+    background-color: #c9c9c9;
+    color: blue;
+    width: 5em;
+    height: 5em;
+}
+
+.nothing::before {
+}
+
+.one::before {
+    content: "1";
+    color: blue;
+    font-size: 2.5em;
+}
+
+.two::before {
+    content: "2";
+    color: green;
+    font-size: 2.5em;
+}
+
+.three::before {
+    content: "3";
+    color: red;
+    font-size: 2.5em;
+}
+
+.bomb::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f1e2";
+    font-size: 2.5em;
+    color: black;
+}
+
+.full {
+    box-shadow: inset -2px -2px 2px 0 rgba(0,0,0,0.75), inset 3px 3px 3px 0 rgba(255, 255, 255, 0.75);
+}
+
+.full::before {
+    opacity: 0;
+}
+
+.full:hover {
+    box-shadow: none;
+}
+
+.full:hover::before{
+    opacity: 1;
+}
