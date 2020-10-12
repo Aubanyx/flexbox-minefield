@@ -39,9 +39,6 @@
     height: 5em;
 }
 
-.nothing::before {
-}
-
 .one::before {
     content: "1";
     color: blue;
